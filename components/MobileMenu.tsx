@@ -73,11 +73,6 @@ export default function MobileMenu() {
               Portfolio
             </Link>
           </li>
-          <li className="border-b border-gray-300">
-            <Link href="/contact" className="flex w-auto pb-4 pt-4">
-              Contact
-            </Link>
-          </li>
         </ul>
       )}
     </>
