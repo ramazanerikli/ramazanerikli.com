@@ -28,8 +28,8 @@ export default function Home({ posts, works }: Props) {
           <p>
          {/*    I am a Software Developer, who has a front-end background for years
             and mainly focusing on building full-stack applications. My area of
-            interest is building accessible and fast web experiences. Currently,
-            I am working as a freelancer.
+            interest is building accessible and fast web experiences. Currently
+             I am working as a freelancer.
           */}
           Software Developer with 5+ years of web development experience. Currently focused on React, Next.js.
           </p>
