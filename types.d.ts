@@ -3,6 +3,7 @@ export interface Post {
   _createdAt: string;
   title: string;
   description: string;
+  tags: array;
   slug: {
     current: string
   };
@@ -17,6 +18,7 @@ export interface Post {
 export interface Work {
   _id: string;
   title: string;
+  tags: array;
   description: string;
   color: string;
   link: string

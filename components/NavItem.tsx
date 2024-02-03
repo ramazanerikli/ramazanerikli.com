@@ -8,7 +8,9 @@ const NavItem: FC<{
   text: string;
 }> = ({ href, text }) => {
   const router = useRouter();
-  const isActive = router.asPath === href;
+  const isActive =
+    (href === "/" && router.asPath === "/") ||
+    (href !== "/" && router.asPath.startsWith(href));
   return (
     <NextLink
       href={href}

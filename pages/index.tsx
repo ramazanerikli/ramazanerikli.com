@@ -15,6 +15,8 @@ interface Props {
 export default function Home({ posts, works }: Props) {
   const latestProjects = works.slice(-3);
 
+  console.log("works", works)
+
   return (
     <div className="mx-auto">
       <Layout>
@@ -26,12 +28,7 @@ export default function Home({ posts, works }: Props) {
             Hey, I'm Ramazan
           </h1>
           <p>
-         {/*    I am a Software Developer, who has a front-end background for years
-            and mainly focusing on building full-stack applications. My area of
-            interest is building accessible and fast web experiences. Currently
-             I am working as a freelancer.
-          */}
-          Software Developer with 5+ years of web development experience. Currently focused on React, Next.js.
+          A web developer with 6+ years of front-end development experience. Currently focused on React, TypeScript.
           </p>
 
           <div className="pt-12">
@@ -89,6 +86,12 @@ export default function Home({ posts, works }: Props) {
                       </svg>
                     </div>
                     <p>{work.description}</p>
+                    <div className="flex gap-2 mt-2">
+                      {work.tags?.map((tag: any, index: number) => (
+                        <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{tag}</span>
+                      ))}
+                    </div>
+                    {/* <img src="https://cdn.sanity.io/images/okc0bq7c/production/96b9bdfda21d1f92b619f005d29af62ca1867c15-2880x1794.png" /> */}
                   </div>
                 </Link>
               ))}
@@ -107,6 +110,7 @@ export const getServerSideProps = async () => {
     title,
     description,
     color,
+    tags,
     link
   }`;
 
