@@ -13,7 +13,7 @@ export default function Layout(props: any) {
   return (
     <div className="container mx-auto px-8">
       <Head>
-        <title>Ramazan Erikli - Frontend Developer</title>
+        <title>Ramazan Erikli | Frontend Developer</title>
         <meta name="google-site-verification" content="qPgF6cx1y6cqvr3af-0WR5JPo2YvTq0oZsXRKJ2cTbY" />
         <meta name="robots" content="follow, index" />
         <meta content="Frontend Developer" name="description" />

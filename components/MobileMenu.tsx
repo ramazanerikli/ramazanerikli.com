@@ -22,36 +22,12 @@ export default function MobileMenu() {
 
   return (
     <>
-      <button className="md:hidden lg:hidden" aria-label="Toggle menu" type="button" onClick={toggleMenu}>
+      <button className="md:hidden lg:hidden toggle-btn" aria-label="Toggle menu" type="button" onClick={toggleMenu}>
         {!isMenuOpen && (
-          <svg
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-          >
-            <path d="M4 6H28V8H4zM4 24H28V26H4zM4 12H28V14H4zM4 18H28V20H4z"></path>
-            <title>Menu</title>
-          </svg>
+          <svg viewBox="0 0 16 15" fill="#000" xmlns="http://www.w3.org/2000/svg"><rect y="2" width="16" height="1"></rect><rect y="7" width="16" height="1"></rect><rect y="12" width="8" height="1"></rect><title>Menu</title></svg>
         )}
         {isMenuOpen && (
-          <svg
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-          >
-            <path d="M24 9.4L22.6 8 16 14.6 9.4 8 8 9.4 14.6 16 8 22.6 9.4 24 16 17.4 22.6 24 24 22.6 17.4 16 24 9.4z"></path>
-            <title>Close</title>
-          </svg>
+          <svg viewBox="0 0 14 14" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round"><path d="M13.25 0.75L1.25 12.75" stroke="currentColor"></path><path d="M1.25 0.75L13.25 12.75" stroke="currentColor"></path><title>Close</title></svg>
         )}
       </button>
 

@@ -25,6 +25,13 @@ h1 {
 
 /* Todo: stylings for blog post elements */
 
+.toggle-btn {
+  margin-left: 12px;
+}
+.toggle-btn svg {
+  width: 1.5rem;
+}
+
 .blog-content a {
   color: rgb(46, 46, 239);
   text-decoration: underline;
