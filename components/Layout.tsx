@@ -44,10 +44,6 @@ export default function Layout(props: any) {
           <NavItem href="/blog" text="Blog" />
           <NavItem href="/portfolio" text="Portfolio" />
         </div>
-        {/* todo: add theme switcher button */}
-        <button className="hidden btn" type="button" aria-label="Toggle Theme">
-          light
-        </button>
       </nav>
 
       <div className="flex min-h-screen pb-16 pt-12">{children}</div>

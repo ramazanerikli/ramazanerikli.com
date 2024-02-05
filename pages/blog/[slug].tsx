@@ -23,16 +23,27 @@ interface Props {
 
 function Post({ post }: Props) {
 
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const month = months[date.getMonth()];
+    const day = date.getDate();
+    const year = date.getFullYear();
+  
+    return `${month} ${day}, ${year}`;
+  };
 
   return (
-
 
       <Layout>
         <div className="w-full">
         <h1 className="text-3xl md:text-4xl">{post.title}</h1>
-        <p className="text-gray-400">{new Date(post._createdAt).toLocaleDateString()}</p>
-
-        <div className="blog-content mt-10">
+        <p className="text-gray-400">{formatDate(post._createdAt)}</p>
+        <div className="blog-content mt-6">
           <BlockContent
             className=""
             dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}

@@ -25,6 +25,15 @@ h1 {
 
 /* Todo: stylings for blog post elements */
 
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #49de80;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .toggle-btn {
   margin-left: 12px;
 }

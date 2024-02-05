@@ -31,6 +31,12 @@ export default function Home({ posts, works }: Props) {
           A web developer with 6+ years of front-end development experience. Currently focused on React, TypeScript.
           </p>
 
+          <div className="pt-5 hidden">
+            <span className="dot"></span>
+            <span>Available for freelance work</span>
+          </div>
+          
+
           <div className="pt-12">
             <div className="flex flex-row justify-between items-center">
               <h2 className="text-2xl font-bold">Latest Projects</h2>
