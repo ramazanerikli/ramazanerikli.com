@@ -45,6 +45,11 @@ export default function Portfolio({ works }: Props) {
                     </svg>
                   </div>
                   <p>{work.description}</p>
+                  <div className="flex gap-2 mt-2">
+                      {work.tags?.map((tag: any, index: number) => (
+                        <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{tag}</span>
+                      ))}
+                  </div>
                 </div>
               </Link>
             ))}
@@ -62,6 +67,7 @@ export const getServerSideProps = async () => {
     title,
     description,
     color,
+    tags,
     link
   }`;
 
