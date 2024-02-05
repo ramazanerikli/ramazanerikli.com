@@ -91,7 +91,6 @@ export default function Home({ posts, works }: Props) {
                         <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{tag}</span>
                       ))}
                     </div>
-                    {/* <img src="https://cdn.sanity.io/images/okc0bq7c/production/96b9bdfda21d1f92b619f005d29af62ca1867c15-2880x1794.png" /> */}
                   </div>
                 </Link>
               ))}

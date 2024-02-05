@@ -13,18 +13,18 @@ export default function Layout(props: any) {
   return (
     <div className="container mx-auto px-8">
       <Head>
-        <title>Ramazan Erikli - Software Developer</title>
+        <title>Ramazan Erikli - Frontend Developer</title>
         <meta name="google-site-verification" content="qPgF6cx1y6cqvr3af-0WR5JPo2YvTq0oZsXRKJ2cTbY" />
         <meta name="robots" content="follow, index" />
-        <meta content="Full-stack Developer" name="description" />
-        <meta property="og:title" content={"Ramazan Erikli - Software Developer"} />
+        <meta content="Frontend Developer" name="description" />
+        <meta property="og:title" content={"Ramazan Erikli - Frontend Developer"} />
         <meta property="og:type" content={"website"} />
         <meta property="og:site_name" content="Ramazan Erikli" />
-        <meta property="og:description" content={"Ramazan Erikli - Software Developer"} />
+        <meta property="og:description" content={"Ramazan Erikli - Frontend Developer"} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@ramazanerikli_" />
-        <meta name="twitter:title" content={"Ramazan Erikli - Software Developer"} />
-        <meta name="twitter:description" content={"Ramazan Erikli - Software Developer"} />
+        <meta name="twitter:title" content={"Ramazan Erikli - Frontend Developer"} />
+        <meta name="twitter:description" content={"Ramazan Erikli - Frontend Developer"} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
