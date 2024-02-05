@@ -63,7 +63,7 @@ h1 {
 
 /* Mobile menu */
 .menu {
-  left: 0;
+  left: 12px;
   top: 4rem;
   padding: 24px 28px 0 24px;
 }
