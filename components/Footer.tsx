@@ -43,7 +43,7 @@ export default function Footer() {
               Github
             </a>
             <a
-              className="text-gray-500 hover:text-gray-600 transition"
+              className="hidden text-gray-500 hover:text-gray-600 transition"
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/ramazanerikli_"
