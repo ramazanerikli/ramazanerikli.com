@@ -62,10 +62,39 @@ h1 {
 }
 
 /* Mobile menu */
-.menu {
-  left: 12px;
-  top: 4rem;
+
+.mobile-menu.open .menu {
+  left: 0;
+}
+.mobile-menu.close .menu {
+  left: -600px;
+}
+
+.mobile-menu .menu {
+  top: 0;
   padding: 24px 28px 0 24px;
+  width: 100vw;
+  height: 100vh;
+  transition: left .4s ease;
+}
+
+.mobile-menu .menu-mail-container {
+  margin-bottom: 30vh;
+  margin-top: 5vh;
+}
+.mobile-menu .menu li a {
+  font-size: 2.8rem;
+  font-weight: lighter;
+}
+.mobile-menu .menu li a.menu-mail {
+  font-size: 1.8rem;
+}
+.mobile-menu .menu li {
+  display: flex;
+  justify-content: center;
+}
+.mobile-menu .menu li.has-space {
+  margin-top: auto;
 }
 
 /* Code preview */

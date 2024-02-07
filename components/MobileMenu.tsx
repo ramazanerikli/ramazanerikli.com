@@ -21,36 +21,37 @@ export default function MobileMenu() {
   }, []);
 
   return (
-    <>
+    <div className={isMenuOpen ? "mobile-menu open" : "mobile-menu close"}>
       <button className="md:hidden lg:hidden toggle-btn" aria-label="Toggle menu" type="button" onClick={toggleMenu}>
         {!isMenuOpen && (
           <svg viewBox="0 0 16 15" fill="#000" xmlns="http://www.w3.org/2000/svg"><rect y="2" width="16" height="1"></rect><rect y="7" width="16" height="1"></rect><rect y="12" width="8" height="1"></rect><title>Menu</title></svg>
         )}
-        {isMenuOpen && (
-          <svg viewBox="0 0 14 14" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round"><path d="M13.25 0.75L1.25 12.75" stroke="currentColor"></path><path d="M1.25 0.75L13.25 12.75" stroke="currentColor"></path><title>Close</title></svg>
-        )}
       </button>
 
 
-      {isMenuOpen && (
-        <ul className="menu flex flex-col absolute bg-white w-full overflow-y-auto z-30 h-full min-h-screen max-h-screen">
-          <li className="border-b border-gray-300">
+        <ul className="lg:hidden md:hidden menu flex flex-col absolute bg-white w-full overflow-y-auto z-30 h-full min-h-screen max-h-screen">
+          <button type="button" className="toggle-btn" onClick={toggleMenu}>
+            <svg viewBox="0 0 14 14" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round"><path d="M13.25 0.75L1.25 12.75" stroke="currentColor"></path><path d="M1.25 0.75L13.25 12.75" stroke="currentColor"></path><title>Close</title></svg>
+          </button>
+          <li className="has-space">
             <Link href="/" className="flex w-auto pb-4 pt-4">
               Home
             </Link>
           </li>
-          <li className="border-b border-gray-300">
+          <li className="">
             <Link href="/blog" className="flex w-auto pb-4 pt-4">
               Blog
             </Link>
           </li>
-          <li className="border-b border-gray-300">
+          <li className="">
             <Link href="/portfolio" className="flex w-auto pb-4 pt-4">
               Portfolio
             </Link>
           </li>
+          <li className="menu-mail-container">
+            <a className="font-bold menu-mail" href="mailto:ramazanerikli1@gmail.com">ramazanerikli1@gmail.com</a>
+          </li>
         </ul>
-      )}
-    </>
+    </div>
   );
 }
