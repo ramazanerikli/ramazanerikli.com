@@ -17,7 +17,7 @@ export default function Portfolio({ works }: Props) {
       <div className="w-full">
         <h1 className="text-3xl md:text-4xl mb-6">Portfolio</h1>
         <div className="pt-4">
-          <div className="flex gap-6 flex-col">
+          <div className="flex gap-2 lg:gap-4 flex-col">
             {works.map((work) => (
               <Link
                 href={work.link}
