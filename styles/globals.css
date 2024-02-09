@@ -14,7 +14,8 @@ body {
 } 
 
 .container {
-  max-width: 680px;
+  /* max-width: 680px;  */
+  max-width: 768px; 
 }
 
 

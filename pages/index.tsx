@@ -59,7 +59,7 @@ export default function Home({ posts, works }: Props) {
               </Link>
             </div>
 
-            <div className="featured-content flex gap-6 flex-col mt-4">
+            <div className="featured-content mt-4 md:grid grid-cols-2 gap-4">
               {latestProjects.map((work) => (
                 <Link
                   key={work._id}
