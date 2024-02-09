@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ramazanerikli.com
+
+# Sitemaps
+Sitemap: https://www.ramazanerikli.com/sitemap.xml

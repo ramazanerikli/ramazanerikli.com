@@ -38,11 +38,17 @@ export default function Layout(props: any) {
         />
       </Head>
       <nav className="nav pt-6 flex align-center justify-between">
-        <div className="ml-[-0.8rem] flex gap-x-1 w-full">
+        <div className="flex items-center justify-between w-full">
           <MobileMenu />
-          <NavItem href="/" text="Home" />
-          <NavItem href="/blog" text="Blog" />
-          <NavItem href="/portfolio" text="Portfolio" />
+          <a href="/" className="font-bold flex items-center">
+            <img src="/avatar-bit.png" width={30} height={30} className="rounded-full mr-2" alt="Ramazan Erikli" />
+            ramazanerikli.com
+          </a>
+          <div>
+            <NavItem href="/" text="Home" />
+            <NavItem href="/blog" text="Blog" />
+            <NavItem href="/portfolio" text="Portfolio" />
+          </div>
         </div>
       </nav>
 

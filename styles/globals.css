@@ -64,6 +64,9 @@ h1 {
 
 /* Mobile menu */
 
+.mobile-menu.close {
+  display: none;
+}
 .mobile-menu.open .menu {
   left: 0;
 }
