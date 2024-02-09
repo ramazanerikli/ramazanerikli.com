@@ -4,18 +4,11 @@ import Layout from "../../components/Layout";
 import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../types";
 
-import dynamic from "next/dynamic";
-
-const SyntaxHighlighter: any = dynamic(
-  () => import("react-syntax-highlighter"),
-  { ssr: false }
-);
+import SyntaxHighlighter from "react-syntax-highlighter";
 
 const BlockContent = require("@sanity/block-content-to-react");
 
 import style from "react-syntax-highlighter/dist/cjs/styles/hljs/a11y-light";
-
-
 
 interface Props {
   post: Post;
