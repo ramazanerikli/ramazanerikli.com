@@ -8,7 +8,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 
 const BlockContent = require("@sanity/block-content-to-react");
 
-import style from "react-syntax-highlighter/dist/cjs/styles/hljs/a11y-light";
+import style from "react-syntax-highlighter/dist/cjs/styles/hljs/tomorrow-night"; // Change the theme here
 
 interface Props {
   post: Post;
@@ -50,7 +50,7 @@ function Post({ post }: Props) {
                     className="syntax-highlighter"
                       language={props.node.language}
                       style={style}
-                      customStyle={{ padding: '1rem', background: '#f3f4f6' }}
+                      customStyle={{ padding: '1rem',  }}
                     >
                       {props.node.code}
                     </SyntaxHighlighter>

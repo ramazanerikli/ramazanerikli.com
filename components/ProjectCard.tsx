@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 import { Work } from "../types";
 
-import ContactModal from "../components/ContactModal";
 
 interface Props {
   work: Work;
