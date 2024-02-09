@@ -124,16 +124,8 @@ pre::-webkit-scrollbar-thumb {
 }
 
 
-.featured-content > a:first-child .featured-project {
-  border-color: #49de80;
-}
-
-.featured-content > a:nth-child(2) .featured-project {
-  border-color: #bf84fc;
-}
-
-.featured-content > a:nth-child(3) .featured-project {
-  border-color: #fb923c;
+body {
+ background-color: #fafafa;
 }
 
 .link-gmail {

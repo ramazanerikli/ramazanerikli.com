@@ -2,7 +2,7 @@ import { Post } from "../types";
 import { Work } from "../types";
 
 import Layout from "../components/Layout";
-
+import ProjectCard from "../components/ProjectCard";
 import Link from "next/link";
 
 import { sanityClient } from "../sanity";
@@ -15,7 +15,7 @@ interface Props {
 export default function Home({ posts, works }: Props) {
   const latestProjects = works.slice(-3);
 
-  console.log("works", works)
+
 
   return (
     <div className="mx-auto">
@@ -28,7 +28,9 @@ export default function Home({ posts, works }: Props) {
             Hey, I'm Ramazan
           </h1>
           <p>
-          A web developer with 6+ years of front-end development experience and passionate about implementing unique designs into accessible and fast web experiences. Currently focused on React, TypeScript.
+            A web developer with 6+ years of front-end development experience
+            and passionate about implementing unique designs into accessible and
+            fast web experiences. Currently focused on React, TypeScript.
           </p>
 
           <div className="pt-12">
@@ -65,33 +67,7 @@ export default function Home({ posts, works }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    className={`featured-project border-l-4 rounded-md px-3 py-2 bg-white hover:bg-gray-100 cursor-pointer transition-all`}
-                  >
-                    <div className="flex flex-row gap-1 items-center">
-                      <h3 className="font-bold">{work.title}</h3>
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 12 16"
-                        height="1em"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p>{work.description}</p>
-                    <div className="flex gap-2 mt-2">
-                      {work.tags?.map((tag: any, index: number) => (
-                        <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
+                  <ProjectCard work={work} />
                 </Link>
               ))}
             </div>
