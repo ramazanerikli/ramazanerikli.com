@@ -55,7 +55,7 @@ export default function Footer() {
             <button
               onClick={() => setIsModalOpen(true)}
               data-modal-toggle="contactModal"
-              className="bg-white hover:bg-gray-100 flex items-center gap-2 font-bold transition-all px-3 py-2 rounded-md"
+              className="hover:bg-gray-100 flex items-center gap-2 font-bold transition-all px-3 py-2 rounded-md"
             >
               Contact{" "}
               <svg

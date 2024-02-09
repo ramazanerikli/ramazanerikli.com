@@ -39,7 +39,7 @@ export default function Home({ posts, works }: Props) {
 
               <Link
                 href="/portfolio"
-                className="flex flex-row gap-1 items-center bg-white hover:bg-gray-100 transition-all rounded-md px-3 py-2"
+                className="flex flex-row gap-1 items-center hover:bg-gray-100 transition-all rounded-md px-3 py-2"
               >
                 View all
                 <svg
