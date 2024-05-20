@@ -11,18 +11,11 @@ export default function MobileMenu() {
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
-      document.body.style.overflow = "";
     } else {
       setIsMenuOpen(true);
-      document.body.style.overflow = "hidden";
     }
   }
 
-  useEffect(() => {
-    return function reset() {
-      document.body.style.overflow = '';
-    };
-  }, []);
 
   useEffect(() => {
     setIsMenuOpen(false)

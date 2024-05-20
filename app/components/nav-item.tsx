@@ -1,6 +1,6 @@
 "use client";
 import { FC } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import cn from "classnames";
 
@@ -8,7 +8,6 @@ const NavItem: FC<{
   href: string;
   text: string;
 }> = ({ href, text }) => {
-  const router = useRouter();
   const pathname = usePathname() as any;
   const isActive =
     (href === "/" && pathname === "/") ||
