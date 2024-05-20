@@ -1,6 +1,22 @@
 "use client";
-import { getPosts } from "../api/blog/get-posts/route";
+import { client } from "@/sanity/lib/client"
+
 import PostCard from "../components/post-card";
+
+export async function getPosts() {
+  const query = `
+    *[_type == "post"] | order(publishedAt desc) {
+      title,
+      slug,
+      publishedAt,
+      excerpt,
+      tags,
+      body
+    }
+  `;
+  const data = await client.fetch(query);
+  return data;
+}
 
 export default async function Blog() {
   const posts = await getPosts();

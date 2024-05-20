@@ -1,8 +1,21 @@
 "use client";
 import { client } from "@/sanity/lib/client"
 import imageUrlBuilder from '@sanity/image-url'
-import Link from "next/link"
-import { getProjects } from "../api/projects/get-projects/route";
+
+
+export async function getProjects() {
+  const query = `
+    *[_type == "project"] {
+      name,
+      date,
+      description,
+      "image": image.asset->url,
+      link
+    }
+  `;
+  const data = await client.fetch(query);
+  return data;
+}
 
 const builder = imageUrlBuilder(client)
 
