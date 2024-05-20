@@ -1,8 +1,6 @@
 
-"use client";
 import React from "react";
 import { client } from "@/sanity/lib/client"
-import {PortableText} from '@portabletext/react'
 const BlockContent = require("@sanity/block-content-to-react");
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { tomorrowNightBright } from 'react-syntax-highlighter/dist/esm/styles/hljs'
@@ -12,7 +10,7 @@ type Props = {
   params: { post: string }
 }
 
-export async function getPost(slug: string): Promise<any> {
+function getPost(slug: string): Promise<any> {
   return client.fetch(
     `
     *[_type == "post" && slug.current == $slug][0] {
@@ -34,15 +32,11 @@ export default async function Post({ params }: any) {
 
   const post = await getPost(slug)
   
-
-
-
   return (
     <div>
       <h1 className="text-3xl md:text-4xl">
         {post.title}
       </h1>
-      <dt className="text-gray-400"><Moment format={'MMMM DD YYYY'} date={post.publishedAt} /></dt>
       <div className="blog-content mt-6">
       <BlockContent
             className=""
