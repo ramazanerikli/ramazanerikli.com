@@ -52,7 +52,6 @@ export default function RootLayout({
               <NavItem href="/" text="Home" />
               <NavItem href="/blog" text="Blog" />
               <NavItem href="/projects" text="Projects" />
-              <NavItem href="/contact" text="Contact" />
               </div>
             </div>
           </nav>
