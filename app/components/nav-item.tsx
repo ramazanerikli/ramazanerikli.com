@@ -1,7 +1,6 @@
 "use client";
 import { FC } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import cn from "classnames";
 
 const NavItem: FC<{
@@ -13,9 +12,7 @@ const NavItem: FC<{
     (href === "/" && pathname === "/") ||
     (href !== "/" && pathname.startsWith(href));
   return (
-    <Link
-      prefetch={false}
-      passHref={true}
+    <a
       href={href}
       className={cn(
         isActive ? "inter-medium text-gray-800" : "inter-medium",
@@ -23,7 +20,7 @@ const NavItem: FC<{
       )}
     >
       <span>{text}</span>
-    </Link>
+    </a>
   );
 };
 
