@@ -1,7 +1,6 @@
 "use client";
 import { FC } from "react";
 import { usePathname } from "next/navigation";
-import cn from "classnames";
 
 const NavItem: FC<{
   href: string;
@@ -14,12 +13,15 @@ const NavItem: FC<{
   return (
     <a
       href={href}
-      className={cn(
-        isActive ? "inter-medium text-gray-800" : "inter-medium",
-        "hidden md:inline-block py-2 px-3 rounded-md hover:bg-gray-100 transition-all"
-      )}
+      className={
+        isActive 
+        ? 
+        "hidden md:inline-block py-2 transition-all inter-medium text-gray-800 border-b-2 border-black"
+        :
+        "hidden md:inline-block py-2 transition-all inter-medium text-gray-800 border-b-2 border-gray-200"
+      }
     >
-      <span>{text}</span>
+      <span className="text-lg">{text}</span>
     </a>
   );
 };

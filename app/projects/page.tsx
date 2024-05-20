@@ -34,10 +34,10 @@ export default async function Projects() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2">
           {projects.map((project: any, index: number) => (
     <div
-    className={`featured-project lg:mb-0 mb-2 border border-gray-100 text-gray-700 hover:text-black rounded-md px-3 py-3 bg-white hover:-translate-y-2 transition-all duration-500 cursor-pointer transition-all`}
+    className={`project-card lg:mb-0 mb-2 border border-gray-100 text-gray-700 hover:text-black rounded-md px-3 py-3 bg-white hover:-translate-y-2 transition-all duration-500 cursor-pointer transition-all`}
   >
     <div className="flex flex-col gap-1 items-start">
-    <img src={urlFor(project.image).url()} />  
+    <img src={urlFor(project.image).url()} className="w-full" />  
       <div className="flex items-center gap-2">
       <h3>{project.name}</h3>
       <svg

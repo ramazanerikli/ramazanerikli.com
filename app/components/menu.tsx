@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function MobileMenu() {
@@ -37,20 +36,20 @@ export default function MobileMenu() {
           <button type="button" className="hidden toggle-btn" onClick={toggleMenu}>
             <svg viewBox="0 0 14 14" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round"><path d="M13.25 0.75L1.25 12.75" stroke="currentColor"></path><path d="M1.25 0.75L13.25 12.75" stroke="currentColor"></path><title>Close</title></svg>
           </button>
-          <li className="has-space">
-            <Link href="/" className="flex w-auto pb-4 pt-4 text-xl">
+          <li className="has-space border-b-2 border-gray-200">
+            <a href="/" className="flex w-auto pb-4 pt-4 text-xl ">
               Home
-            </Link>
+            </a>
           </li>
-          <li className="">
-            <Link href="/blog" className="flex w-auto pb-4 pt-4 text-xl">
-              Blog
-            </Link>
-          </li>
-          <li className="">
-            <Link href="/projects" className="flex w-auto pb-4 pt-4 text-xl">
+          <li className="border-b-2 border-gray-200">
+            <a href="/projects" className="flex w-auto pb-4 pt-4 text-xl">
               Projects
-            </Link>
+            </a>
+          </li>
+          <li className="border-b-2 border-gray-200">
+            <a href="/blog" className="flex w-auto pb-4 pt-4 text-xl">
+              Blog
+            </a>
           </li>
         </ul>
     </div>

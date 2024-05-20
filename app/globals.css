@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
 .inter-light {
@@ -30,6 +30,7 @@ body {
 
 .mobile-menu.open .menu {
   top: 52px;
+  height: 100%;
 }
 .mobile-menu.close .menu {
   top: -600px;
@@ -37,10 +38,10 @@ body {
 
 .mobile-menu .menu {
   top: 52px;
-  padding: 24px 47px 0 0;
+  /* padding: 24px 28px 0 0; */
   max-width: 85vw;
   transition: left .4s ease;
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
 .toggle-btn svg {
@@ -58,3 +59,10 @@ body {
   background-color: rgba(192, 55, 42, .08);
   color: #c0372a;
 }
+
+@media screen and (min-width: 768px) {
+  .project-card img {
+    height: 215px;
+  }
+}
+

@@ -46,12 +46,12 @@ export default function RootLayout({
               <MobileMenu />
               <div className="flex items-center ms-auto lg:ms-0">
               <img src="/avatar-bit.png" className="rounded-full me-2 hidden" width={30} height={30} alt="Ramazan Erikli" />
-              <Link href="/" className="inter-bold">Ramazan Erikli</Link>
+              <Link href="/" className="inter-bold text-lg">Ramazan Erikli</Link>
               </div>
-              <div>
+              <div className="flex gap-5">
               <NavItem href="/" text="Home" />
-              <NavItem href="/blog" text="Blog" />
               <NavItem href="/projects" text="Projects" />
+              <NavItem href="/blog" text="Blog" />
               </div>
             </div>
           </nav>

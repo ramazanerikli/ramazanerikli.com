@@ -20,10 +20,10 @@ export default function Footer() {
               Blog
             </Link>
             <Link
-              href="/portfolio"
+              href="/projects"
               className="text-gray-500 hover:text-gray-600 transition"
             >
-              Portfolio
+              Projects
             </Link>
           </div>
           <div className="flex flex-col">
@@ -49,7 +49,12 @@ export default function Footer() {
             <button
               onClick={() => setIsModalOpen(true)}
               data-modal-toggle="contactModal"
-              className="inter-medium flex items-center gap-2 hover:-translate-y-2 transition-all duration-500 text-center transition-all duration-500  text-white shadow-2xl shadow-blue-300 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300  rounded-lg text-md px-3 lg:px-5 py-2.5 lg:mr-2 mb-2 focus:outline-none"
+              className="
+              inter-medium flex items-center gap-2 
+              border border-2
+              transition-all duration-500 text-center transition-all duration-500  
+              text-black bg-white hover:bg-black hover:text-white hover:border-black
+              rounded-xl text-md px-3 lg:px-5 py-2.5 lg:mr-2 mb-2 focus:outline-none"
             >
               <span>Contact</span>
               <svg
