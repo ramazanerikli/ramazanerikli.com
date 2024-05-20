@@ -1,9 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const pathname = usePathname();
 
   function toggleMenu() {
     if (isMenuOpen) {
@@ -20,6 +23,10 @@ export default function MobileMenu() {
       document.body.style.overflow = '';
     };
   }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false)
+  },[pathname])
 
   return (
     <div className={isMenuOpen ? "mobile-menu open lg:hidden" : "mobile-menu close lg:hidden"}>
