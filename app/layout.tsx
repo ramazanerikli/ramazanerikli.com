@@ -4,6 +4,7 @@ import "./globals.css";
 import MobileMenu from "./components/menu";
 import NavItem from "./components/nav-item";
 import Footer from "./components/footer";
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -45,7 +46,7 @@ export default function RootLayout({
               <MobileMenu />
               <div className="flex items-center ms-auto lg:ms-0">
               <img src="/avatar-bit.png" className="rounded-full me-2 hidden" width={30} height={30} alt="Ramazan Erikli" />
-              <a href="/" className="inter-bold">Ramazan Erikli</a>
+              <Link href="/" className="inter-bold">Ramazan Erikli</Link>
               </div>
               <div>
               <NavItem href="/" text="Home" />

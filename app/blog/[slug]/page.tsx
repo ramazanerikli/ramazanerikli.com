@@ -33,11 +33,11 @@ export default async function Post({ params }: any) {
   const post = await getPost(slug)
   
   return (
-    <div>
+    <div className="w-full">
       <h1 className="text-3xl md:text-4xl">
         {post.title}
       </h1>
-      <div className="blog-content mt-6">
+      <div className="blog-content mt-6 w-full">
       <BlockContent
             className=""
             dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
@@ -50,13 +50,12 @@ export default async function Post({ params }: any) {
     <SyntaxHighlighter
       showLineNumbers={false}
       showInlineLineNumbers={false}
-      lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}
-      wrapLines={true} 
       language={props.node.language}
       style={tomorrowNightBright}
       customStyle={{
         padding: '1em',
         marginBottom: '2em',
+        maxWidth: '100%'
       }}
     >
       {props.node.code}

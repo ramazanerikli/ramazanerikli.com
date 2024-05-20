@@ -26,7 +26,7 @@ async function getPosts() {
 
 async function getProjects() {
   const query = `
-    *[_type == "project"] {
+    *[_type == "project"] | order(publishedAt desc) [0..1] {
       name,
       date,
       description,
