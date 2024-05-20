@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 
 
 // const inter = Inter({ subsets: ["latin"] });
-export const inter_light = Inter({
+const inter_light = Inter({
   subsets: ["latin"],
   weight: "300",
   variable: '--font-inter-light',
 });
-export const inter_medium = Inter({
+const inter_medium = Inter({
   subsets: ["latin"],
   weight: "400",
   variable: '--font-inter-medium',
 });
-export const inter_bold = Inter({
+const inter_bold = Inter({
   subsets: ["latin"],
   weight: "500",
   variable: '--font-inter-bold',
