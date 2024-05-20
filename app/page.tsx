@@ -164,7 +164,6 @@ export default async function Home() {
           <div className="pt-12">
             <div className="flex flex-row justify-between items-center">
               <h2 className="text-2xl">Recent Posts</h2>
-
               <Link
                 href="/blog"
                 className="flex flex-row gap-1 items-center hover:bg-gray-100 transition-all rounded-md px-3 py-2"
