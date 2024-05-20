@@ -48,9 +48,11 @@ export default async function Post({ params }: any) {
                 code: (props: any) => (
                   <div className="my-2">
     <SyntaxHighlighter
-      showLineNumbers={true}
-      showInlineLineNumbers={true}
-      language={"js"}
+      showLineNumbers={false}
+      showInlineLineNumbers={false}
+      lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}
+      wrapLines={true} 
+      language={props.node.language}
       style={tomorrowNightBright}
       customStyle={{
         padding: '1em',
