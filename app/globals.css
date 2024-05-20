@@ -29,18 +29,18 @@ body {
 }
 
 .mobile-menu.open .menu {
-  left: 0;
+  top: 52px;
 }
 .mobile-menu.close .menu {
-  left: -600px;
+  top: -600px;
 }
 
 .mobile-menu .menu {
-  top: 0;
-  padding: 24px 28px 0 24px;
-  width: 100vw;
-  height: 100vh;
+  top: 52px;
+  padding: 24px 47px 0 0;
+  max-width: 85vw;
   transition: left .4s ease;
+  background-color: #fafafa;
 }
 
 .toggle-btn svg {
@@ -49,4 +49,12 @@ body {
 
 .blog-content img {
   margin: 1rem 0;
+}
+
+.link-gmail {
+  color: #c0372a;
+}
+.link-gmail:hover {
+  background-color: rgba(192, 55, 42, .08);
+  color: #c0372a;
 }

@@ -1,14 +1,16 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
+import ContactModal from "./contact-modal";
 
 export default function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
 
   return (
-      <footer className="flex flex-col justify-center items-start mx-auto w-full mb-8 border-t pt-4 border-gray-200">
+    <>
+    <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+          <footer className="flex flex-col justify-center items-start mx-auto w-full mb-8 border-t pt-4 border-gray-200">
         <div className="grid grid-cols-3 gap-4 md:gap-16 mt-8 w-full">
           <div className="flex flex-col">
             <h4 className="font-bold mb-2 text-slate-600">General</h4>
@@ -67,5 +69,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+    </>
   );
 }
