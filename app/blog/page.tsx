@@ -3,7 +3,7 @@ import { client } from "@/sanity/lib/client"
 
 import PostCard from "../components/post-card";
 
-export async function getPosts() {
+async function getPosts() {
   const query = `
     *[_type == "post"] | order(publishedAt desc) {
       title,

@@ -10,7 +10,7 @@ type Props = {
   params: { post: string }
 }
 
-function getPost(slug: string): Promise<any> {
+async function getPost(slug: string): Promise<any> {
   return client.fetch(
     `
     *[_type == "post" && slug.current == $slug][0] {
