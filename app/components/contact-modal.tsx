@@ -8,6 +8,7 @@ const ContactModal: FC<{
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = () => {
+    navigator.clipboard.writeText("proje@ramazanerikli.com")
     setIsCopied(true);
     setTimeout(() => {
       setIsModalOpen(false), setIsCopied(false);
