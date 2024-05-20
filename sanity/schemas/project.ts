@@ -4,7 +4,6 @@ export const project = {
   name: "project",
   title: "Project",
   type: "document",
-
   fields: [
     {
       name: "name",
@@ -41,6 +40,11 @@ export const project = {
       name: "link",
       title: "Link",
       type: "string",
+    },
+    {
+      name: "featured",
+      title: "Featured",
+      type: "boolean",
     },
   ]
 }

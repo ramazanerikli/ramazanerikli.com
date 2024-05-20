@@ -21,12 +21,13 @@ async function getPosts() {
 
 async function getProjects() {
   const query = `
-    *[_type == "project"] | order(publishedAt desc) [0..1] {
+    *[_type == "project" && featured == true]{
       name,
       date,
       description,
       "image": image.asset->url,
-      link
+      link,
+      featured
     }
   `;
   const data = await client.fetch(query);

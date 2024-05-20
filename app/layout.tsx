@@ -48,7 +48,7 @@ export default function RootLayout({
               <img src="/avatar-bit.png" className="rounded-full me-2 hidden" width={30} height={30} alt="Ramazan Erikli" />
               <Link href="/" className="inter-bold text-lg">Ramazan Erikli</Link>
               </div>
-              <div className="flex gap-5">
+              <div className="flex gap-7">
               <NavItem href="/" text="Home" />
               <NavItem href="/projects" text="Projects" />
               <NavItem href="/blog" text="Blog" />
