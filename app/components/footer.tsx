@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
       <footer className="flex flex-col justify-center items-start mx-auto w-full mb-8 border-t pt-4 border-gray-200">
-        <div className="grid grid-cols-3 gap-1 md:gap-4 mt-8 w-full">
+        <div className="grid grid-cols-3 gap-4 md:gap-16 mt-8 w-full">
           <div className="flex flex-col">
             <h4 className="font-bold mb-2 text-slate-600">General</h4>
             <Link
@@ -48,9 +48,9 @@ export default function Footer() {
             <button
               onClick={() => setIsModalOpen(true)}
               data-modal-toggle="contactModal"
-              className="hover:bg-gray-100 flex items-center gap-2 font-bold transition-all px-3 py-2 rounded-md"
+              className="inter-medium flex items-center gap-2 hover:-translate-y-2 transition-all duration-500 text-center transition-all duration-500  text-white shadow-2xl shadow-blue-300 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300  rounded-lg text-md px-5 py-2.5 mr-2 mb-2 focus:outline-none"
             >
-              Contact{" "}
+              <span>Contact</span>
               <svg
                 width="16"
                 height="16"
