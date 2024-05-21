@@ -1,6 +1,7 @@
 "use client";
 import { FC } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const NavItem: FC<{
   href: string;
@@ -11,7 +12,7 @@ const NavItem: FC<{
     (href === "/" && pathname === "/") ||
     (href !== "/" && pathname.startsWith(href));
   return (
-    <a
+    <Link
       href={href}
       className={
         isActive 
@@ -22,7 +23,7 @@ const NavItem: FC<{
       }
     >
       <span className="text-lg">{text}</span>
-    </a>
+    </Link>
   );
 };
 

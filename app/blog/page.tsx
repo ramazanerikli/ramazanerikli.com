@@ -1,4 +1,3 @@
-"use client";
 import { client } from "@/sanity/lib/client"
 
 import PostCard from "../components/post-card";
