@@ -29,10 +29,13 @@ const ContactModal: FC<{
       <div className="relative p-4 w-full max-w-xs max-h-full">
         <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
           <div className="p-4 md:p-5 text-center flex flex-col">
-            <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
+            <h3 className="inter-bold mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
               proje@ramazanerikli.com
             </h3>
-            <a href="/" className="link-gmail py-2.5 rounded-full">
+            <a 
+              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=proje@ramazanerikli.com" 
+              target="_blank"
+              className="link-gmail py-2.5 rounded-full">
               open in Gmail
             </a>
             <button
